@@ -1,4 +1,4 @@
-# To check the number of times iterated
+# To check the number of times list is iterated
 
 count=0
 for value in [10,20,30]:
