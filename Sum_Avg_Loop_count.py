@@ -2,7 +2,7 @@ K=[]
 sum=0
 count=0
 while True:
-    input=raw_input("Enter the number")
+    input=raw_input("Enter the number\n")
     if (input=='done'):
         break
     value=float(input)
@@ -13,5 +13,6 @@ for i in K:
     count=count+1
 
 print sum,count
-print "Average",sum/len(K)
+print "Sum is :", sum
+print "Average is :",sum/len(K)
 
