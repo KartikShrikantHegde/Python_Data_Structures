@@ -14,7 +14,6 @@ for i in K:
     sum=sum+i
     count=count+1
 
-print sum,count
 print "Sum is :", sum
 print "Average is :",sum/len(K)
 
