@@ -1,4 +1,4 @@
-# Find the largest given number in the sequence
+# Find the largest number in the Array
 
 def largest(something):
     max=something[0]
