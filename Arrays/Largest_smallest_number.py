@@ -1,4 +1,4 @@
-# Find the largest and smallest for a given input of numbers
+# Find the largest and smallest for a given set of numbers
 
 largest = None
 smallest = None
