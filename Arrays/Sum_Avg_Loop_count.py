@@ -1,4 +1,4 @@
-# Find the count, avg, sum in a list
+# count, avg, sum in a list
 
 K=[]
 sum=0
