@@ -1,5 +1,7 @@
+__author__= "Karthik Hegde"
+
 class Fruit(object):
-    """A class that makes various tasty fruits."""
+
     def __init__(self, name, color, flavor, poisonous):
         self.name = name
         self.color = color
