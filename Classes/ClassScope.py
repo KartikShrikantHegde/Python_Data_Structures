@@ -1,5 +1,5 @@
 class Animal(object):
-    """Makes cute animals."""
+
     is_alive = True                                     # this is a member variable
     def __init__(self, name, age):                      # Instance Variable
         self.name = name
