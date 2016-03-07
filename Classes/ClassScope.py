@@ -1,3 +1,5 @@
+#Class Declarations
+
 class Animal(object):
 
     is_alive = True                                     # this is a member variable
