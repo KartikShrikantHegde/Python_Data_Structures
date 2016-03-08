@@ -1,4 +1,3 @@
-#Class Declarations
 
 class Animal(object):
 
