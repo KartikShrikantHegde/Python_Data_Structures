@@ -1,0 +1,18 @@
+Lists
+1. Random access
+2. Start Index - 0
+
+Adv :
+1. Very Fast
+2. Easy
+
+DisAdv :
+1. Not Dynamic
+2. If Full, we need to create a bigger array and copy it
+
+When to use :
+1. Different collections of data
+2. Mutability
+3. To use stack or queue
+4. When data is not unique (Sets for unique)
+
