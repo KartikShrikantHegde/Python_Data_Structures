@@ -1,6 +1,9 @@
 # Remove last element from list
 # O(1) time
 
+# Removing an element at the middle
+# Takes O(N) time
+
 my_list = [10,30,50]
 
 my_list.pop()
