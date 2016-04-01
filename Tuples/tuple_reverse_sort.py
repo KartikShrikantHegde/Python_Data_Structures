@@ -1,4 +1,4 @@
-#Using reverse sort method in tuples
+#Using reverse sort method in tuples for values in dict
 
 my_dictionary = {'a':10,'b':20,'c':30}
 
