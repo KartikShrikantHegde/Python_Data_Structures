@@ -1,5 +1,6 @@
 # HackerRank - 2D Array problem
 
+# Array Declaration
 my_2d_array = [[0 for x in range(6)] for x in range(6)]
 for j in range(0,6):
     my_array = [int(i) for i in raw_input().strip().split()]
