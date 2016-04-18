@@ -2,7 +2,5 @@
 
 for _ in range(int(raw_input())):
     N = int(raw_input())
-
     N = N & 0xffffffff # 32 bit representation
     print N ^ 0xffffffff
-    print N
