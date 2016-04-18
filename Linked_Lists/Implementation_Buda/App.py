@@ -1,3 +1,5 @@
+__author__ = "Karthik"
+
 import LinkedList
 
 linkedList = LinkedList.LinkedList()
