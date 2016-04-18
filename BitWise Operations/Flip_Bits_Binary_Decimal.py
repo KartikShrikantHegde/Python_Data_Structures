@@ -12,3 +12,10 @@ for bits in range(2,len(b)):
 
 print reversed_bit
 print int(reversed_bit,2)
+
+
+'''
+a = 0b110 # 6
+mask = 0b111 # 7
+desired =  a ^ mask # 0b1
+'''
