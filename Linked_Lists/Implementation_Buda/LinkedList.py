@@ -1,4 +1,4 @@
-
+__author__ = "Karthik"
 import Node
 class LinkedList(object):
 
