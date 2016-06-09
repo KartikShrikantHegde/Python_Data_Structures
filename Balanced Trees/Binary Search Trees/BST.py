@@ -20,6 +20,10 @@ def insert(root,node):
                 insert(root.right,node)
 
 
+def delete(root,node):
+
+
+
 
 
 
