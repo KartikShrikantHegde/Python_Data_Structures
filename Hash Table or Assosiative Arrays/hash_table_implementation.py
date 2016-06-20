@@ -12,7 +12,7 @@ insert(table,93,'banana')
 insert(table,13,'tangerine')
 
 
-# For resolving collision
+# For resolving collision - using chaining 
 
 table = [[] for x in range(10)]
 
