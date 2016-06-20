@@ -1,4 +1,4 @@
-table = [0] * 10
+table = [[] for x in range(10)]
 
 def hash_function(x): return x % 10
 
