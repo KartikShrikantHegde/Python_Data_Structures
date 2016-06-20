@@ -1,3 +1,5 @@
+# Hash_Function is handled internally
+
 table = [0] * 10
 
 def hash_function(x): return x % 10
