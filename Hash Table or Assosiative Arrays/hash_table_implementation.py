@@ -1,4 +1,4 @@
-table = [0] * 10
+table = [[] for x in range(10)]
 
 def hash_function(x): return x % 10
 
@@ -12,7 +12,7 @@ insert(table,93,'banana')
 insert(table,13,'tangerine')
 
 
-# For resolving collision
+# For resolving collision - using chaining 
 
 table = [[] for x in range(10)]
 
