@@ -17,9 +17,8 @@ class Fruit(object):
 def main():
     lemon = Fruit()
     print lemon.get_color()
-    lemon.set_color('Blue')
+    lemon.set_color("Blue")
     print lemon.get_color()
-
 
 if __name__ == "__main__":
     main()
