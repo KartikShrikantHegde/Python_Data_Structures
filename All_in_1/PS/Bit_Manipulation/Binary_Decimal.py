@@ -16,4 +16,5 @@ def Bin_Dec(binary_no):
     print result
 
 
+
 Bin_Dec(1001100)
