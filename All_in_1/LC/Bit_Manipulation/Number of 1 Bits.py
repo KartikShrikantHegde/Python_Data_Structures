@@ -1,3 +1,5 @@
+# Calculate the no of 1's in the binary no of a decimal
+
 class Solution(object):
     def hammingWeight(self, n):
         """
@@ -12,3 +14,7 @@ class Solution(object):
                 count += 1
 
         return count
+
+
+my_sol = Solution()
+print my_sol.hammingWeight(4)
