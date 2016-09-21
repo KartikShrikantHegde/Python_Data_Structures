@@ -5,6 +5,21 @@
 Note that you can only do bitwise operations on an integer.
 Trying to do them on strings or floats will result in nonsensical output! '''
 
+
+# Ex: 0 0 1 1        -> 3
+#     8 4 2 1 = 2 + 1 = 3
+#
+# Now to left shift of 0 0 1 1 is -> 0 1 1 0 -> 4 + 2 = 6
+#
+#
+# so original is 3 and leftshfting gives 6.
+#
+# This implies its equal to multiplying by 2 for left shift
+
+# Similerly the right shift is equal to dividing the original no by 2 ( Note: Floor division)
+
+
+
 shift_right = 0b1000
 shift_left = 0b1
 
