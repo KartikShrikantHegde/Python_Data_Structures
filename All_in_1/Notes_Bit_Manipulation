@@ -1,8 +1,10 @@
-1. XOR and OR
-2. Bit shift
-3. unsigned and signed and bin to unsigned and signed concept
-4. bit flip using hackerrank
-5. PS method
+Note: Bitwise operations are done always only on integers.
+
+xor or nor operations will flip the bits.
+
+And and Or operations can be used to mask specific bits.
+
+
 
 ------------------------------------------------------------------
 
