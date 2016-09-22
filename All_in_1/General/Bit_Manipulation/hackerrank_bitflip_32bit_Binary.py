@@ -2,7 +2,7 @@
 
 def myfunc(N):
     print N ^ 0xffffffff
-    # or print N ^ 4294967295 (2^32-1)
+    # print abs(~N) or print N ^ 4294967295 (2^32-1)
 
 
 myfunc(2147483647)
