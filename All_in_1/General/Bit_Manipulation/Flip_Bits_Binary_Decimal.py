@@ -1,5 +1,13 @@
 # Convert the int no to binary and flip the bis and then again convert back to int
 
+# Efficient method is :
+#
+# number = 4
+# reversed_bit = number ^ 0xf
+# print reversed_bit
+
+# Brute-Force method is
+
 number = 4
 reversed_bit = ""
 
