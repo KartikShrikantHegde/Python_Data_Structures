@@ -1,6 +1,7 @@
 # Declaring and initilazing 2d array
 
-my_2d_array = [[0 for x in range(6)] for x in range(6)]
+my_2d_array = [[0 for x in range(6)] for x in range(3)]
+print my_2d_array
 for j in range(0,6):
     my_array = [int(i) for i in raw_input().strip().split()]
     for k in range(0,6):
