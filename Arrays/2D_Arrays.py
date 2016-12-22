@@ -1,13 +1,24 @@
 # Declaring and initilazing 2d array
 
-my_2d_array = [[0 for x in range(6)] for x in range(3)]
-print my_2d_array
-for j in range(0,6):
-    my_array = [int(i) for i in raw_input().strip().split()]
-    for k in range(0,6):
-        my_2d_array[j][k] = my_array[k]
+# my_2d_array = [[0 for x in range(6)] for x in range(3)]
+# print my_2d_array
+# for j in range(0,6):
+#     my_array = [int(i) for i in raw_input().strip().split()]
+#     for k in range(0,6):
+#         my_2d_array[j][k] = my_array[k]
+#
+# print my_2d_array
 
-print my_2d_array
+
+rows =3
+columns= 2
+mylist = [[1,2,3],[2,8,11],[11,10,9]]
+print mylist
+for i in range(rows):
+    for j in range(columns):
+        mylist[i][j] = '%s,%s'%(i,j)
+print mylist
+
 
 '''import numpy
 numpy.zeros((5,5))'''
