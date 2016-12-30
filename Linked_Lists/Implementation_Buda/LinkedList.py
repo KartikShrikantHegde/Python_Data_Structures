@@ -1,58 +1,63 @@
 __author__ = "Karthik"
 import Node
-class LinkedList(object):
 
+
+class LinkedList(object):
     def __init__(self):
         self.head = None
 
-    def insertStart(self,data):
+    def insertStart(self, data):
 
-        newNode = Node.Node(data)
+        newnode = Node.Node(data)
 
-        if not self.head :
-            self.head = newNode
+        if not self.head:
+            self.head = newnode
         else:
-            newNode.nextNode = self.head
-            self.head = newNode
+            newnode.nextnode = self.head
+            self.head = newnode
 
     def size(self):
 
-        actualNode = self.head
+        current_node = self.head
         size = 0
 
-        while actualNode is not None:
+        while current_node is not None:
             size += 1
-            actualNode = actualNode.nextNode
+            current_node = current_node.nextnode
 
         return size
 
-
     def traverseList(self):
 
-        actualNode = self.head
+        current_node = self.head
 
-        while actualNode is not None:
-            print("%s " % actualNode.data)
-            actualNode = actualNode.nextNode
+        while current_node is not None:
+            print("%s " % current_node.data)
+            current_node = current_node.nextnode
 
-    def insertEnd(self,data):
+    def insertEnd(self, data):
 
-        newNode = Node.Node(data)
-        actualNode = self.head
+        new_node = Node.Node(data)
+        current_node = self.head
 
-        while actualNode.nextNode is not None:
-            actualNode = actualNode.nextNode
+        while current_node.nextnode is not None:
+            current_node = current_node.nextnode
 
-        actualNode.nextNode = newNode
+        current_node.nextnode = new_node
 
-    def remove(self,data):
-        if( self.head ):
-            if( data == self.head.data ):
-                self.head = self.head.nextNode
+    def remove(self, data):
+        if self.head:
+            if data == self.head.data:
+                self.head = self.head.nextnode
             else:
-                self.head.remove(data,self.head)
+                self.head.remove(data, self.head)
 
+    def find(self, data):
+        current_node = self.head
 
-
-
-
+        while current_node is not None:
+            if data == current_node.data:
+                return "Found"
+            else:
+                current_node = current_node.nextnode
+        return "Not Found"
