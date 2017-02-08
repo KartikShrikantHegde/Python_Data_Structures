@@ -18,7 +18,7 @@ def missing_no(my_arr, con):
 
     x = (xplusy + xminusy)/2
     y = (xplusy - xminusy)/2
-    return x , y
+    return x,y
 
 
 my_arr = [1,3,4]
