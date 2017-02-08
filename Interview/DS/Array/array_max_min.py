@@ -2,7 +2,6 @@ def max_min(my_array):
     my_min = my_array[0]
     my_max = my_array[0]
 
-    print len(my_array)/2
     for i in range(0,len(my_array)/2):
         num1 = my_array[i * 2]
         num2 = my_array[(i*2) + 1]

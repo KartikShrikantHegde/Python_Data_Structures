@@ -1,17 +1,17 @@
-# def missing_no(my_array):
-#     my_arr = sorted(my_array)
-#
-#     start_no = 1
-#     if start_no not in my_arr:
-#         print start_no
-#
-#     for i in range(0,len(my_arr)):
-#         if my_arr[i] - start_no != 0 and my_arr[i] - start_no != 1:
-#             for j in range(start_no+1,my_arr[i]):
-#                 print j
-#         start_no = my_arr[i]
-#
-# missing_no(my_array=[7,3,3,1])
+def missing_no(my_array):
+    my_arr = sorted(my_array)
+
+    start_no = 1
+    if start_no not in my_arr:
+        print start_no
+
+    for i in range(0,len(my_arr)):
+        if my_arr[i] - start_no != 0 and my_arr[i] - start_no != 1:
+            for j in range(start_no+1,my_arr[i]):
+                print j
+        start_no = my_arr[i]
+
+missing_no(my_array=[7,3,3,1])
 
 # # LeetCode solution
 #

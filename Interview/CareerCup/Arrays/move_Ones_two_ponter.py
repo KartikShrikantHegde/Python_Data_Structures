@@ -1,4 +1,4 @@
-def mov_zeroes(my_arr):
+def mov_ones(my_arr):
     if my_arr is None or len(my_arr) == 0:
         return my_arr
 
@@ -24,4 +24,4 @@ def swap(my_arr,i,j):
     my_arr[i] = my_arr[j]
     my_arr[j] = temp
 
-print mov_zeroes(my_arr=[0,1,0,0,0,1,1,0,1])
+print mov_ones(my_arr=[0,1,0,0,0,1,1,0,1])
