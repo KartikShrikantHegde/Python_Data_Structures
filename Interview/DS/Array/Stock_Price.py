@@ -9,4 +9,4 @@ def Stock_Price(my_array):
     return profit
 
 
-print Stock_Price(my_array = [100, 180, 260, 310, 40, 535, 695])
+print Stock_Price(my_array = [1,2,4])

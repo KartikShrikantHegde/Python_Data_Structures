@@ -1,5 +1,14 @@
-def reverse_str(my_str):
-    print my_str.isalnum()
-    return my_str.lower() == my_str[::-1].lower() and my_str.isalnum() == my_str[::-1].isalnum()
+def reverse_str(s):
+    l, r = 0, len(s) - 1
+    while l < r:
+        while l < r and not s[l].isalnum():
+            l += 1
+        while l < r and not s[r].isalnum():
+            r -= 1
+        if s[l].lower() != s[r].lower():
+            return False
+        l += 1
+        r -= 1
+    return True
 
-print reverse_str(my_str="A man, a plan, a canal: Panama")
+print reverse_str(s="    ")
