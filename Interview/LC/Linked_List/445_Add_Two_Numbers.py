@@ -32,13 +32,33 @@ print "*** Ans ***\n"
 
 # l1 and l2 are head
 
-def merge(l1,l2):
-    while l1.nextnode is not None:
-        l1 = l1.nextnode
+class Solution(object):
+    def addTwoNumbers(self, l1, l2):
+        """
+        :type l1: ListNode
+        :type l2: ListNode
+        :rtype: ListNode
+        """
+        dummy = Node(0)
+        current, carry = dummy, 0
 
-    while l2.nextnode is not None:
-        l1 = l2.nextnode
+        while l1 or l2:
+            data = carry
+            if l1:
+                data += l1.data
+                l1 = l1.nextnode
+            if l2:
+                data += l2.data
+                l2 = l2.nextnode
+            carry, data = data / 10, data % 10
+            current.nextnode = Node(data)
+            current = current.nextnode
+
+        if carry == 1:
+            current.nextnode = Node(1)
+
+        return dummy.nextnode
 
 
-merge(first_list.head,second_list.head)
-print first_list.traverseList()
+my_add = Solution()
+my_add.addTwoNumbers(first_list.head,second_list.head)
