@@ -7,14 +7,21 @@ class Solution(object):
         s = s[::-1]
         count = 0
 
+        # for ch in s:
+        #     if ch.isalnum():
+        #         count += 1
+        #     else:
+        #         if count == 0:
+        #             continue
+        #         else:
+        #             break
+
+        s = s.strip()
         for ch in s:
             if ch.isalnum():
                 count += 1
             else:
-                if count == 0:
-                    continue
-                else:
-                    break
+                break
 
         return count
 

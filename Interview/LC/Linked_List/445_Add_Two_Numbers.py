@@ -39,26 +39,34 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-        dummy = Node(0)
-        current, carry = dummy, 0
+        str1 = ""
+        str2 = ""
 
-        while l1 or l2:
-            data = carry
-            if l1:
-                data += l1.data
-                l1 = l1.nextnode
-            if l2:
-                data += l2.data
-                l2 = l2.nextnode
-            carry, data = data / 10, data % 10
-            current.nextnode = Node(data)
+        while l1:
+            str1 += str(l1.data)
+            l1 = l1.nextnode
+
+        while l2:
+            str2 += str(l2.data)
+            l2 = l2.nextnode
+
+        str1 = int(str1)
+        str2 = int(str2)
+
+        add_sum = str1 + str2
+        add_sum = str(add_sum)
+
+        new_head = Node(add_sum[0])
+        current = new_head
+
+        for ch in add_sum[1:len(add_sum)]:
+            current.nextnode = Node(ch)
             current = current.nextnode
 
-        if carry == 1:
-            current.nextnode = Node(1)
+        new_list = LinkedList()
+        new_list.head = new_head
 
-        return dummy.nextnode
-
+        print new_list.traverseList()
 
 my_add = Solution()
 my_add.addTwoNumbers(first_list.head,second_list.head)
