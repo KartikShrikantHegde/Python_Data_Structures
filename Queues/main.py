@@ -1,14 +1,13 @@
 import Implementation
 
-q=Implementation.Queue()
-
+q = Implementation.Queue()
 
 print q.isEmpty()
 
-q.enqueue(4)
-q.enqueue('dog')
-q.enqueue("Man")
+q.add(4)
+q.add('dog')
+q.add("Man")
 
-print q.dequeue()
+print q.remove()
 print q.peek()
-print q.dequeue()
+print q.remove()
