@@ -33,7 +33,7 @@ class Solution(object):
         """
 
         if root:
-            count[root.val] = count[root.val]+1
+            count[root.val] += 1
             print count
             self.findMode(root.left)
             self.findMode(root.right)
