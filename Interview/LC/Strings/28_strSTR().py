@@ -8,10 +8,8 @@ class Solution(object):
 
         count = 0
         for i in range(len(haystack)):
-            pos = 0
             for j in range(len(needle)):
                 if haystack[i] == needle[j]:
-                    pos = i
                     i += 1
                     j += 1
                     count += 1
@@ -24,4 +22,4 @@ class Solution(object):
 
 
 my_str = Solution()
-print my_str.strStr(haystack="mnKartik",needle="Kartik")
+print my_str.strStr(haystack="aaa",needle="aa")
