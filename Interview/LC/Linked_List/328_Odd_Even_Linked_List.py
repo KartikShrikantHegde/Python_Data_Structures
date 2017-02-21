@@ -1,11 +1,11 @@
 from Linked_Lists.single_ll.Node import Node
 from Linked_Lists.single_ll.LinkedList import LinkedList
 
-a = Node(1)
-b = Node(2)
-c = Node(3)
-d = Node(4)
-e = Node(5)
+a = Node(2)
+b = Node(6)
+c = Node(9)
+d = Node(11)
+e = Node(16)
 
 
 a.nextnode = b
@@ -26,7 +26,7 @@ class Solution(object):
             return head
         odd = head
         even = head.nextnode
-        while even and even.nextnode != None:
+        while even and even.nextnode is not None:
             temp = even.nextnode
             even.nextnode = even.nextnode.nextnode
             temp.nextnode = odd.nextnode
