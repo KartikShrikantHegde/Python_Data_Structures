@@ -22,16 +22,18 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        dummy1 = odd = Node(0)
-        dummy2 = even = Node(0)
-        while head:
-            odd.nextnode = head
-            even.nextnode = head.nextnode
+        if not head:
+            return head
+        odd = head
+        even = head.nextnode
+        while even and even.nextnode != None:
+            temp = even.nextnode
+            even.nextnode = even.nextnode.nextnode
+            temp.nextnode = odd.nextnode
+            odd.nextnode = temp
             odd = odd.nextnode
             even = even.nextnode
-            head = head.nextnode.nextnode if even else None
-        odd.nextnde = dummy2.nextnode
-        return dummy1.nextnode
+        return head
 
 soln = Solution()
 print soln.oddEvenList(first_list.head)
