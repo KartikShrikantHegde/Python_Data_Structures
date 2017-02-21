@@ -1,3 +1,5 @@
+''' Time complexity -> log(n). At each step half of the elements are discarded for searching '''
+
 def binary_search(my_arr, k ):
     low = 0
     high = len(my_arr)-1
