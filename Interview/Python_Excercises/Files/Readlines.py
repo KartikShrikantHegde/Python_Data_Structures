@@ -1,4 +1,4 @@
-''' Used to store file -> line by line in an array'''
+''' Used to get file -> line by line into an array'''
 ''' Good if you want to loop through the file or want to do something with each line'''
 
 '''
