@@ -2,7 +2,6 @@ def Roate_K_Time(my_array, k):
     for i in range(0, k):
         temp = my_array.pop(0)
         my_array.append(temp)
-
     return my_array
 
 

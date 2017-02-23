@@ -1,5 +1,3 @@
-import First_Module
-
 def first():
     print "Second Module"
 
