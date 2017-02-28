@@ -1,0 +1,3 @@
+Package -> is a directory containing python module + __init__ file
+Directory -> just python module files
+Module   -> containing python source code

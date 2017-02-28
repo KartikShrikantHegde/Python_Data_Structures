@@ -1,0 +1,15 @@
+__name__ == "__main__"
+
+to make sure you are running the current file from python interpreter not the imported one.
+
+imported files are given the __ name __ == name of the imported file
+
+
+imported code always runs first. so any print statemenet from imported file gets executed first.
+
+but if the code is inside any of the main() in the first Eg: def main():
+																Main()
+
+															-> then it wont get execured in second file
+
+because in second file, imported first file name is first_file. so import wont run

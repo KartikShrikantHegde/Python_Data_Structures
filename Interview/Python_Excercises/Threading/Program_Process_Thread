@@ -1,0 +1,22 @@
+Program : set of instructions -> but its a static code
+
+Process : When program is under execution or after execution , its called process.
+
+It has its own set of instructions and own logic space.
+
+Thread : Its part of the process and controls a unit of code in the process
+
+It has its own set of instructions but
+shares the same logic space as that of other threads in process.
+
+Threads inside the process can share the data bw them.
+
+the problem occurs here as, 2 or more threads can access the data at same time.
+
+Note : Main is also a thread.
+
+Eg: 1. hashing 100 passwords
+
+    2. File download in backend, and UI in frontend
+
+    
