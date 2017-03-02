@@ -1,3 +1,13 @@
 Package -> is a directory containing python module + __init__ file
 Directory -> just python module files
 Module   -> containing python source code
+
+----------------------------------------------------------------------
+
+importing is easy when you have package.
+Otherwise you cant import from directory. i.e if you have a directory say Bank -> and 2 files
+Account + main. Main cant import account as its directory.
+
+Make it package to import and instantiate it.
+
+Note: You need to use from filename import class name you want to instantiate.
