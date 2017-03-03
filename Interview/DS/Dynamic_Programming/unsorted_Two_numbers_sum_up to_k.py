@@ -12,7 +12,7 @@ class Solution(object):
         my_hash = {}
         for i in range(len(nums)):
             if nums[i] in my_hash:
-                return [my_hash[nums[i]],i]
+                return [nums[my_hash[nums[i]]],nums[i]]
             else:
                 my_hash[target - nums[i]] = i
 
