@@ -10,12 +10,12 @@ class LinkedList(object):
     def insertStart(self, data):
 
         newnode = Node.Node(data)
-
-        if not self.head:
+        current = self.head
+        if not current:
             self.head = newnode
         else:
-            newnode.nextnode = self.head
             self.head = newnode
+            self.head.nextnode = current
 
     def size(self):
 
@@ -51,7 +51,18 @@ class LinkedList(object):
             if data == self.head.data:
                 self.head = self.head.nextnode
             else:
-                self.head.remove(data, self.head)
+                current = self.head.nextnode
+                prev = self.head
+                while current:
+                    if current.data == data:
+                        current = current.nextnode
+                        prev.nextnode = current
+                        break
+                    else:
+                        prev = current
+                        current = current.nextnode
+        else:
+            print "List is Empty. Cannot remove elements from empty list"
 
     def find(self, data):
         current_node = self.head
@@ -68,18 +79,18 @@ class LinkedList(object):
         current_node = self.head
         previous_node = None
 
-        while current_node is not None:
-            next_node = current_node.nextnode
+        while current_node:
+            temp_node = current_node.nextnode
             current_node.nextnode = previous_node
             previous_node = current_node
-            current_node = next_node
+            current_node = temp_node
 
         self.head = previous_node
 
     def rec_reverse(self):
 
         if self.head is None:
-            return self.head
+            return None
 
         self.rec_reverse_util(self.head, None)
 
