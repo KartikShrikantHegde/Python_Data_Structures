@@ -15,7 +15,7 @@ if not given it reads entire file.
 
 
 
-''' This outputs the file as it is -> No extra space or nothing. Just as it is in the file'''
+''' This outputs the file as it is -> No extra space or nothing. Just as it is in the file bcz it reads file directly as a string'''
 
 f = open(filename,'r')
 lines = f.read()
