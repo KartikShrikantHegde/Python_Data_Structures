@@ -14,6 +14,22 @@ if not given it reads entire file.
  '''
 
 
+
+''' This outputs the file as it is -> No extra space or nothing. Just as it is in the file'''
+
 f = open(filename,'r')
 lines = f.read()
 print lines
+
+
+
+''' ---------------------------- '''
+
+''' lines gets file contents as a string here. thus we can print each character of the string or the file by looping over it'''
+
+f = open(filename,'r')
+lines = f.read()
+for chars in lines:
+    print chars
+  
+  
