@@ -1,4 +1,4 @@
-# Declaring a set
+# Declaring a set - unordered collection
 
 s = {1, 2, 3}
 print s
@@ -7,4 +7,6 @@ print s
 
 l = [1, 2, 3, 3]
 s = set(l)
+print s
+s.add(4)
 print s

@@ -10,6 +10,6 @@ for (key,value) in d.items():
     print key,value
 
 
-my_tuple = d.items()
+my_list_tuple = d.items()
 
-print my_tuple
+print my_list_tuple
