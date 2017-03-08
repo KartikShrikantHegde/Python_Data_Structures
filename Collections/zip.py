@@ -30,10 +30,17 @@
 # and merges them together in pairs. if one of the collection has more len that
 # extra len val is ignored for mapping
 #
-# It can merge 2 tuples or lists or dicts but returns list
+# It can merge 2 tuples or lists or dicts but returns list of tuples grouped together
 
 # here key 9 is ignored as its an extra len of 2 lists
 
 x = {1:'x', 2:'y', 3:'z',9:"v"}
 y = {4:"z", 5:"a", 6:"q"}
 print zip(x, y)
+
+
+
+m = (1,2,3)
+n = (4,5)
+
+print zip(m,n)
