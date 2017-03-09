@@ -1,7 +1,8 @@
 # Dictionary -> Unordered collection
 # keys are immutable but values are mutable
 
-
+# a Python dictionary throws a KeyError
+# if you try to get an item with a key that is not currently in the dictionary.
 
 vowels = {1: 'a', 2: 'e', 3: 'i', 4: 'o', 5:'u'}
 

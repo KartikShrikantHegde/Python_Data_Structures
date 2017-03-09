@@ -9,6 +9,6 @@ def insertion_sort(my_arr):
 
         my_arr[position] = current_val
 
-my_arr=[5,3,9,6,1,7]
+my_arr=[5,4,1]
 insertion_sort(my_arr)
 print my_arr
