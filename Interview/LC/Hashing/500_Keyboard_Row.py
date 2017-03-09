@@ -10,7 +10,6 @@ class Solution(object):
         result = []
         for word in words:
             t =  set(word.lower())
-
             if a & t == t:
                 result.append((word))
             if b & t == t:
