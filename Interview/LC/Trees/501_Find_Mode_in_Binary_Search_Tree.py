@@ -15,8 +15,8 @@ d = NewNode(2)
 a.right = c
 c.left = d
 
-import collections
-count = collections.defaultdict(int)
+from collections import Counter
+count = Counter()
 
 class Solution(object):
     def findMode(self, root):
@@ -35,5 +35,5 @@ class Solution(object):
 my_mode = Solution()
 my_mode.findMode(a)
 print count
-print max(count.itervalues())
-# print [k for k, v in count.iteritems() if v == max_ct]
+max_ct =  max(count.itervalues())
+print [k for k, v in count.iteritems() if v == max_ct]
