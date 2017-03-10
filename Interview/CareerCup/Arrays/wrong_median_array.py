@@ -22,7 +22,4 @@ def swap(my_arr, i, j):
     my_arr[j] = temp
 
 
-print mov_ones(my_arr=[0, 0, 0, 0, 1, 1, 0, 0])
-
-
-
+print mov_ones(my_arr=[0, 0, 0, 1, 1, 1, 0, 0])
