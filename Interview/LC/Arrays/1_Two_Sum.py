@@ -18,5 +18,5 @@ class Solution(object):
 
 
 my_sum = Solution()
-print my_sum.twoSum(nums=[2,7,9,11],target=9)
+print my_sum.twoSum(nums=[2,9,11,7],target=9)
 

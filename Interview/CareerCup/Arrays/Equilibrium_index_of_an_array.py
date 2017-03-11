@@ -13,6 +13,5 @@ def equilibrium_arr(my_arr):
             right -= 1
     return left
 
-
 new_arr = [12, 1, 4, 6, 8]
 print equilibrium_arr(new_arr)
