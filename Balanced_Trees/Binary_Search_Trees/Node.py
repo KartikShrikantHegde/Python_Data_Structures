@@ -3,7 +3,6 @@ class Node(object):
         self.data = data
         self.leftChild = None
         self.rightChild = None
-        self.Next = None
 
     def insert(self, data):
         if data < self.data:
@@ -18,7 +17,7 @@ class Node(object):
                 self.rightChild.insert(data)
 
     def minValue(self):
-        if self.leftChild == None:
+        if self.leftChild is None:
             return self.data
         else:
             return self.leftChild.minValue()

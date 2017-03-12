@@ -1,0 +1,3 @@
+So, to fix the filename problem, we can just add the letter r:
+
+>>> myfile = open(r'C:\new\text.txt', 'w')

@@ -18,4 +18,3 @@ bst.traverseInOrder()
 # bst.traverseInOrder()
 #
 # print bst.getMin()
-

@@ -40,6 +40,12 @@ class BinarySearchTree(object):
         return minNode.data
 
     def traverseInOrder(self):
-        if self.rootNode:
-            self.rootNode.traverseInOrder()
+        current_node = self.rootNode
+        if current_node:
+            if current_node.leftChild:
+                current_node.leftChild.traverseInOrder()
 
+            print(current_node.data)
+
+            if current_node.rightChild:
+                current_node.rightChild.traverseInOrder()
