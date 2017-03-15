@@ -6,7 +6,7 @@ class BinarySearchTree(object):
         self.rootNode = None
 
     def insert(self, data):
-        if (not self.rootNode):
+        if not self.rootNode:
             self.rootNode = Node(data)
         else:
             self.rootNode.insert(data)

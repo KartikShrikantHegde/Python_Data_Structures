@@ -14,12 +14,14 @@
 # print find_duplicate(my_arr=[10, 20, 30, 40, 40,20])
 
 
-nums = [2,14,18,22,22]
+# nums = [2,14,18,22,22]
+#
+# print len(nums), len(set(nums))
+# print len(nums) != len(set(nums))
 
-print len(nums), len(set(nums))
-print len(nums) != len(set(nums))
 
-
-# from collections import Counter
-# mylist = [20, 30, 25, 20]
-# print [k for k,v in Counter(mylist).items() if v>1]
+from collections import Counter
+mylist = [20, 30, 25, 20]
+for k,v in Counter(mylist).items():
+    if v > 1:
+        print k
