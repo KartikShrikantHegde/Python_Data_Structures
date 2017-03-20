@@ -1,5 +1,5 @@
-from Linked_Lists.single_ll.Node import Node
-from Linked_Lists.single_ll.LinkedList import LinkedList
+from Linked_Lists.Single_ll.Node import Node
+from Linked_Lists.Single_ll.LinkedList import LinkedList
 
 a = Node(7)
 b = Node(2)
