@@ -25,31 +25,10 @@ def check_is_bst(root,min_val,max_val):
     if root is None:
         return True
 
-    if root.val < min_val or root.val > max_val:
+    if root.val <= min_val or root.val >= max_val:
         return False
 
-    return check_is_bst(root.left,min_val,root.val-1) and check_is_bst(root.right,root.val+1,max_val)
+    return check_is_bst(root.left,min_val,root.val) and check_is_bst(root.right,root.val,max_val)
 
 
 print is_bst(a)
-
-# class Solution(object):
-#     def isValidBST(self, root):
-#         """
-#         :type root: TreeNode
-#         :rtype: bool"""
-#
-#         return self.check_is_bst(root, -sys.maxint - 1, sys.maxint)
-#
-#     def check_is_bst(self, root, min_val, max_val):
-#         if root is None:
-#             return True
-#
-#         if root.val < min_val or root.val > max_val:
-#             return False
-#
-#         return self.check_is_bst(root.left, min_val, root.val-1) and self.check_is_bst(root.right,
-#                                                                                           root.val+1, max_val)
-
-# my_obj = Solution()
-# print my_obj.isValidBST(a)

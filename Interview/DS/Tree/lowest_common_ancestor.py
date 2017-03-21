@@ -1,11 +1,12 @@
 from Balanced_Trees.Binary_Search_Trees.Node import Node
 
-root = Node(10)
-root.leftChild = Node(-10)
-root.rightChild = Node(30)
-root.leftChild.rightChild = Node(8)
-root.leftChild.rightChild.leftChild = Node(6)
-root.leftChild.rightChild.rightChild = Node(9)
+root = Node(1)
+root.leftChild = Node(2)
+root.rightChild = Node(3)
+root.leftChild.rightChild = Node(4)
+root.rightChild.rightChild = Node(6)
+root.rightChild.leftChild = Node(5)
+
 
 
 def findlca(root, n1, n2):
@@ -17,4 +18,4 @@ def findlca(root, n1, n2):
         return root.data
 
 
-print findlca(root, 8, -10)
+print findlca(root, 2, 5)

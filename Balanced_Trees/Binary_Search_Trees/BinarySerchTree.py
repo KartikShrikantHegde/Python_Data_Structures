@@ -12,7 +12,7 @@ class BinarySearchTree(object):
             self.rootNode.insert(data)
 
     def remove(self, dataToRemove):
-        if (self.rootNode):
+        if self.rootNode:
             if self.rootNode.data == dataToRemove:
                 tempNode = Node(None)
                 tempNode.leftChild = self.rootNode

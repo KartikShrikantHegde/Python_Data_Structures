@@ -13,7 +13,6 @@ class LinkedList(object):
                 current_node = current_node.nextnode
             current_node.nextnode = new_node
         else:
-            self.head = new_node
             new_node.nextnode = new_node  # For the first node
 
         self.head = new_node
