@@ -19,13 +19,19 @@ a.left = b
 
 
 class Solution(object):
-    def isValidBST(self, root, lessThan=-sys.maxint - 1, largerThan=sys.maxint):
+    def isValidBST(self, root, min_val=-sys.maxint - 1, max_val=sys.maxint):
         """
+        :param max_val:
+        :param min_val:
         :type root: TreeNode
         :rtype: bool"""
 
         if not root:
             return True
-        if root.val <= lessThan or root.val >= largerThan:
+        if root.val <= min_val or root.val >= max_val:
             return False
-        return self.isValidBST(root.left, lessThan, root.val) and self.isValidBST(root.right, root.val, largerThan)
+        return self.isValidBST(root.left, min_val, root.val) and self.isValidBST(root.right, root.val, max_val)
+
+
+obj = Solution()
+print obj.isValidBST(a)
