@@ -14,7 +14,7 @@ bst.insert(678)
 bst.traverseInOrder()
 
 # bst.remove(10)
-#
+# #
 # bst.traverseInOrder()
 #
 # print bst.getMin()

@@ -49,12 +49,12 @@ class Node(object):
 
                 parentNode.rightChild = tempNode
 
-    # def traverseInOrder(self):
-    #
-    #     if self.leftChild:
-    #         self.leftChild.traverseInOrder()
-    #
-    #     print(self.data)
-    #
-    #     if self.rightChild:
-    #         self.rightChild.traverseInOrder()
+    def traverseInOrder(self):
+
+        if self.leftChild:
+            self.leftChild.traverseInOrder()
+
+        print(self.data)
+
+        if self.rightChild:
+            self.rightChild.traverseInOrder()
