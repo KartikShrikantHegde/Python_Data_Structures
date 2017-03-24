@@ -8,7 +8,7 @@ Lambda functions are mainly used in combination with the functions filter(), map
 # lambda argument_list: expression
 
 f = lambda x, y : x + y
-f(1,1)
+print f(1,1)
 
 
 fib = [0,1,1,2,3,5,8,13,21,34,55]

@@ -1,5 +1,5 @@
 
-my_string = "a3b2"
+my_list = "a3b2"
 temp_string = list(my_string)
 res_string = []
 for i in range(0,len(temp_string),2):

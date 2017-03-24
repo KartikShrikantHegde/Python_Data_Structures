@@ -16,7 +16,6 @@ class Solution(object):
             else:
                 my_hash[target - nums[i]] = i
 
-
 my_sum = Solution()
-print my_sum.twoSum(nums=[2,7,9,11],target=9)
+print my_sum.twoSum(nums=[2,7,9,11],target=11)
 
