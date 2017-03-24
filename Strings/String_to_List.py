@@ -17,7 +17,7 @@ print list(my_str)
 # List to string using join - join can be any condition, but join condition will append after 1st char
 
 my_list = ["John","Rick","Tom"]
-print "-".join(my_list)
+print ["".join(my_list)]
 
 
 # using string keyword - just converts the list to string
