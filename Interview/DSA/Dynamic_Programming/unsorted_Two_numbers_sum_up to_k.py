@@ -6,8 +6,8 @@ class Solution(object):
         :rtype: List[int]
         """
 
-        if len(nums) <=1:
-            return False
+        # if len(nums) <=1:
+        #     return False
 
         my_hash = {}
         for i in range(len(nums)):
@@ -16,6 +16,8 @@ class Solution(object):
             else:
                 my_hash[target - nums[i]] = i
 
+        return False
+
 my_sum = Solution()
-print my_sum.twoSum(nums=[2,7,9,11],target=11)
+print my_sum.twoSum(nums=[2],target=11)
 

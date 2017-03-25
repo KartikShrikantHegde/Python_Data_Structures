@@ -40,7 +40,7 @@ def areRotations(string1, string2):
 
 # Driver program to test the above function
 string1 = "abc"
-string2 = "cab"
+string2 = "cad"
 
 if areRotations(string1, string2):
     print "Strings are rotations of each other"

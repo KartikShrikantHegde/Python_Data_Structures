@@ -20,4 +20,4 @@ class Solution(object):
         print nums1
 
 my_merge = Solution()
-print my_merge.merge(nums1=[1,0],m=1,nums2=[2],n=1)
+print my_merge.merge(nums1=[1,3,5],m=3,nums2=[2,4],n=2)
