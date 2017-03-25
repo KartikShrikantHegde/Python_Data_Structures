@@ -3,9 +3,9 @@ def lps(A):
     MaxTemp = A[0]
     Max = A[0]
     for i in xrange(1, len(A)):
-        MinTemp, MaxTemp = min(A[i], A[i] * MaxTemp, A[i] * MinTemp), max(A[i], A[i] * MaxTemp, A[i] * MinTemp)
+        MaxTemp = max(A[i], A[i] * MaxTemp)
         Max = max(Max, MaxTemp)
     return Max
 
 
-print lps(A=[2, 2, 0,-1, -5, 2])
+print lps(A=[-2,3,-4])

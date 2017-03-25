@@ -14,21 +14,6 @@ class NumArray(object):
         :type j: int
         :rtype: int
         """
-        # left_sum = 0
-        # right_sum = 0
-        #
-        # while i <= j:
-        #     left_sum += self.nums[i]
-        #     i += 1
-        #     right_sum += self.nums[j]
-        #     j -=1
-        #
-        # if i == j:
-        #     return left_sum + right_sum + self.nums[i]
-        # return left_sum + right_sum
-
-
-
 
         return self.dp[j] - (self.dp[i - 1] if i > 0 else 0)
 
