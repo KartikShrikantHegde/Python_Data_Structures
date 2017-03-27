@@ -7,5 +7,4 @@ def lps(A):
         Max = max(Max, MaxTemp)
     return Max
 
-
 print lps(A=[-2,3,-4])

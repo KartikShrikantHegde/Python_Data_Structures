@@ -3,5 +3,6 @@
 #     for key,value in Counter(st).values():
 #         print key,value
 
-print ''.join(set('abacbdadbc'))
+print ''.join(set('ababcadbc'))
 # print all_unique(my_str)
+print set('ababcadbc')

@@ -33,8 +33,6 @@ class NewNode(object):
             self.left.inorder()
 
 
-
-
 my_tree = NewNode(7)
 # my_tree.insert(7)
 my_tree.insert(4)

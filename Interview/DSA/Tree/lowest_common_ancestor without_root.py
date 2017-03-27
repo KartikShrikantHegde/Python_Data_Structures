@@ -33,5 +33,5 @@ def lca_without_root(c,e):
         else:
             e = e.parent
 
-print lca_without_root(d,e)
+print lca_without_root(c,e)
 

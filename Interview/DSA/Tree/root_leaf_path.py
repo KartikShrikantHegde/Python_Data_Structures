@@ -23,15 +23,26 @@ c.right = f
 f.left = g
 f.right = h
 
-def print_path(root,Node):
-    my_list = []
+
+def print_path(root):
+    my_arr = [None]*1000
+    helper(root,my_arr,0)
+
+def helper(root,my_arr,lent):
     if root is None:
-        return None
+        return
+
+    my_arr[lent] = root.val
+    lent += 1
 
     if root.left is None and root.right is None:
-        my_list.append(root.val)
+        printarray(my_arr,lent)
+    else:
+        helper(root.left,my_arr,lent)
+        helper(root.right,my_arr,lent)
 
-    if root.left or root.right:
-        my_list.append(root.left)
+def printarray(my_arr,lent):
+    for i in range(0,lent):
+        print my_arr[i]
 
-print print_path(a)
+print_path(a)
