@@ -20,4 +20,4 @@ def helper(s, l, r):
         r += 1
     return s[l + 1:r]
 
-print longestPalindrome(s='aa')
+print longestPalindrome(s='aabccbak')

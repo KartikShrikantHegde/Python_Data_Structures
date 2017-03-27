@@ -29,9 +29,6 @@ def my_sum_possible(root,k):
     if root is None:
         return False
 
-    # if k == root.val:
-    #     return True
-
     if k == root.val or my_sum_possible(root.left,k - root.val) or my_sum_possible(root.right, k - root.val):
         my_list.append(root.val)
         return True, my_list

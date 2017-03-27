@@ -10,13 +10,30 @@ def hash_function(x):
 def insert(input, value):
 
     # print hash_function(input)
+
+    # Note: You need to have a static hash function here which takes the
+    # returned hash value and gives a new hash value because of the poor
+    # hash function used. Skipped here.
+
     table[hash_function(input)] = value
+
+def get(key):
+    hash_val = hash_function(key)
+
+    # Note: You need to have a static hash function here which takes the
+    # returned hash value and gives a new hash value because of the poor
+    # hash function used. Skipped here.
+
+    return table[hash_val]
 
 insert(41, 'apple')
 insert(93, 'banana')
 insert(13, 'tangerine')
 
+
 print table
+
+print get(41)
 
 
 #

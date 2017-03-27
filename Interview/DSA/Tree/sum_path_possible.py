@@ -22,16 +22,23 @@ f.left = g
 
 
 def sum_possible(root, k):
-    return my_sum_possible(root, k, k)
 
-
-def my_sum_possible(root, k, original_k):
     if root is None:
-        return False
+        return None
 
-    if k == root.val:
+    if root.val == k or sum_possible(root.left, k - root.val) or sum_possible(root.right,k-root.val):
         return True
 
-    return my_sum_possible(root.left, k - root.val, original_k) or my_sum_possible(root.right, k - root.val,original_k) or my_sum_possible(root.left,original_k,original_k) or my_sum_possible(root.right, original_k, original_k)
+    return False
 
-print sum_possible(a, 17)
+
+# def my_sum_possible(root, k, original_k):
+#     if root is None:
+#         return False
+#
+#     if k == root.val:
+#         return True
+#
+#     return my_sum_possible(root.left, k - root.val, original_k) or my_sum_possible(root.right, k - root.val,original_k) or my_sum_possible(root.left,original_k,original_k) or my_sum_possible(root.right, original_k, original_k)
+
+print sum_possible(a, 8)
