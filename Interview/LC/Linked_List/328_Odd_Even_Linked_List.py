@@ -23,7 +23,7 @@ class Solution(object):
         :rtype: ListNode
         """
         if not head:
-            return head
+            return None
         odd = head
         even = head.nextnode
         while even and even.nextnode is not None:

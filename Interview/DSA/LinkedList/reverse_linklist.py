@@ -1,6 +1,4 @@
 def reverse_list(self):
-
-
         current_node = self.head
         previous_node = None
 
