@@ -17,7 +17,7 @@ class Solution(object):
         if n > 0:
             nums1[:n] = nums2[:n]
 
-        print nums1
+        return nums1
 
 my_merge = Solution()
-print my_merge.merge(nums1=[1,3,5],m=3,nums2=[2,4],n=2)
+print my_merge.merge(nums1=[10,0,0],m=1,nums2=[2,4],n=2)
