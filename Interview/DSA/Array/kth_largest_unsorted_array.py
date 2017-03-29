@@ -9,7 +9,7 @@ def findKthLargest4(nums, k):
     return heapq.heappop(heap)
 
 
-nums = [10,6,9,0,8]
+nums = [8,1,1,2,3]
 k = 2
 
 print findKthLargest4(nums,k)
