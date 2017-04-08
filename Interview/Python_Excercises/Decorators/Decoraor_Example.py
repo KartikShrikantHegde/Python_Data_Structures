@@ -13,7 +13,7 @@ class Product(db.Model):
         "7.0" for a 7% tax rate."""
         return price * (1 + (tax_rate_percentage * .01))
 
-How can use the language to augment this function so that the return value has a "$" prepended? We create a decorator function, which has a useful shorthand notation: @. To create our decorator, we create a function which takes a function (the function to be decorated) and returns a new function (the original function with decoration applied). Here's how we would do that in our application:
+# How can use the language to augment this function so that the return value has a "$" prepended? We create a decorator function, which has a useful shorthand notation: @. To create our decorator, we create a function which takes a function (the function to be decorated) and returns a new function (the original function with decoration applied). Here's how we would do that in our application:
 
 def currency(f):
     def wrapper(*args, **kwargs):
