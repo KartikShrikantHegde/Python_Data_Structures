@@ -10,8 +10,7 @@ try:
     age = int(input("Type in your guess : Age of the Universe : "))
     print(age)
     if age <= 0:
-        print('calling ooops')
-        oops()
+        raise Negative()
 except ValueError:
     print("Please make sure you type in an integer")
 except Negative:
