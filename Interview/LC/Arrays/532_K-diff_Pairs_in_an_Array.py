@@ -5,18 +5,22 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-
-
-        nums = list(set(nums))
-        my_dict = {}
         count = 0
-        my_dict[nums[0]] = abs(k - nums[0])
-        for i in range(1,len(nums)):
-            my_dict[nums[i]] = abs(k-nums[i])
-            if my_dict[nums[i]] in my_dict.keys():
+        from collections import Counter
+        if k == 0:
+            for k,v in Counter(nums).items():
+                if v >= 2:
+                    count += 1
+            return count
+
+        count = 0
+        c = Counter(nums)
+        for key in c:
+            if key + k in c:
                 count += 1
 
         return count
 
 my_obj = Solution()
-print my_obj.findPairs(nums=[1, 3, 1, 5, 4],k=0)
+print my_obj.findPairs(nums=[1,2,3,4,5],k=3)
+
