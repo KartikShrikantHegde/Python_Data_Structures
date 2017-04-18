@@ -1,0 +1,3 @@
+creating virtaul env -> mkdir myfolder
+                        virtualenv .
+                        source bin/activate
