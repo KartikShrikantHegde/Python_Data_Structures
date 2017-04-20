@@ -44,13 +44,21 @@ class Project(object):
         self.__end_date = value
 
     @property
-    def end_date(self):
-        return self.__end_date
+    def disc(self):
+        return self.__disc
 
-    @end_date.setter
-    def end_date(self, value):
-        self.__end_date = value
+    @disc.setter
+    def disc(self, value):
+        self.__disc = value
 
+
+    def serialize(self):
+        return {
+            "Name":self.name,
+            "Disc": self.disc,
+            "Start Date": self.start_date,
+            "End Date": self.end_date
+        }
 
 
 
