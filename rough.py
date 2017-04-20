@@ -69,12 +69,16 @@
 # print dutchNationalFlag(nums,4)
 
 
-my_arr = [1,0,2,0,2,1,1]
-smaller = [1,0,0,1,1]
-pivot = [2]
-larget = [2]
+# my_arr = [1,0,2,0,2,1,1]
+# smaller = [1,0,0,1,1]
+# pivot = [2]
+# larget = [2]
+#
+# my_arr[:] = smaller[0:] + pivot + larget[0:]
+# print my_arr
 
-my_arr[:] = smaller[0:] + pivot + larget[0:]
-print my_arr
+my_arr = [3,1,4,1,3,5,4]
+from collections import Counter
+print type(Counter(my_arr))
 
 
