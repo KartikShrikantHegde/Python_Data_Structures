@@ -8,36 +8,35 @@ class NewNode(object):
 a = NewNode(5)
 b = NewNode(3)
 c = NewNode(8)
-d = NewNode(9)
-e = NewNode(10)
-
+d = NewNode(1)
+e = NewNode(4)
 
 a.left = b
 a.right = c
 c.right = d
-c.right = e
-
-def height(root):
-    if root is None:
-        return False
-
-    if root.left is None and root.right is None:
-        return True
+d.right = e
 
 
-    my_val = helper()
-
-def helper():
-    if root is None:
+def _check_balance(node):
+    if node is None:
         return 0
+    left_height = _check_balance(node.left)
+    if left_height == -1:
+        return -1
+    right_height = _check_balance(node.right)
+    if right_height == -1:
+        return -1
+    diff = abs(left_height - right_height)
+    if diff > 1:
+        return -1
+    return 1 + max(left_height, right_height)
 
-    if root.left is None and root.right is None:
-        return 1
 
-    left_height = 1 + height(root.left)
-    right_height = 1 + height(root.right)
+def check_balance(root):
+    if root is None:
+        raise TypeError('root cannot be None')
+    height = _check_balance(root)
+    return height != -1
 
-    if abs(left_height - right_height) > 1:
-        return False
 
-print height(a)
+print check_balance(a)
