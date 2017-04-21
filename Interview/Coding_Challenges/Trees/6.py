@@ -38,5 +38,4 @@ def check_balance(root):
     height = _check_balance(root)
     return height != -1
 
-
 print check_balance(a)
