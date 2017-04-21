@@ -8,16 +8,26 @@ class NewNode(object):
 a = NewNode(5)
 b = NewNode(3)
 c = NewNode(8)
-d = NewNode(1)
-e = NewNode(4)
+d = NewNode(9)
+e = NewNode(10)
+
 
 a.left = b
 a.right = c
 c.right = d
-d.right = e
-
+c.right = e
 
 def height(root):
+    if root is None:
+        return False
+
+    if root.left is None and root.right is None:
+        return True
+
+
+    my_val = helper()
+
+def helper():
     if root is None:
         return 0
 
@@ -27,7 +37,7 @@ def height(root):
     left_height = 1 + height(root.left)
     right_height = 1 + height(root.right)
 
-    return max(left_height, right_height)
-
+    if abs(left_height - right_height) > 1:
+        return False
 
 print height(a)

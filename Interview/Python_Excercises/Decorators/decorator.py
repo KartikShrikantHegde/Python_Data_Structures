@@ -1,3 +1,5 @@
+# Decorators takes a function and return another 
+
 def my_decorator(some_function):
 
     def wrapper():
