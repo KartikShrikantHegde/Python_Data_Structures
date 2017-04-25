@@ -1,0 +1,6 @@
+Iterators:
+
+1. Maintain order - they maintain the order of items. so that next time they fetch the next item in order.
+2. lazy evaluation - It doesnt know how many, but just knows what's next known as lazy evaluation
+
+

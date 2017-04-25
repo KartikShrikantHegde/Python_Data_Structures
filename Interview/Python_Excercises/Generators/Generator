@@ -1,0 +1,21 @@
+Iterating over a large data set is memory intense operation.
+
+Eg: Ticketing counter -> You dont want pile of tickets lying and pick one by one.
+                         instead you want one by one
+
+
+
+Range vs Xrange:
+
+Range ->  returns a list of objects to loop through - it stores the entire list of objects in memory
+Xrange -> supports lazy evaluation
+          It returns a single object at a time - and stores a single object into memory
+          Its a generator
+
+
+Iterators are objects that support Next() method -> which grabs items one at a time
+
+
+A generator is a iterator, not vice versa.
+
+There it evaluates one at a time, without storing entire thing in memory

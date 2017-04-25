@@ -1,0 +1,4 @@
+Generator function -> returns generator object
+
+generator object or generator -> uses lazy evaluation to return a value
+
