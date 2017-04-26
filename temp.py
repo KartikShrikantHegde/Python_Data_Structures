@@ -143,4 +143,21 @@
 #
 # print find_two_closest_and_sum(int_list=[21,6,27,18],target_num=15)
 
-print set([4, 4, 4])
+# print set([4, 4, 4])
+
+
+def validate_pin(pin):
+    # return true or false
+    my_no = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+    if len(pin) == 4 or len(pin) == 6:
+        for ch in pin:
+            if ch in my_no:
+                continue
+            else:
+                return False
+    else:
+        return False
+
+    return True
+
+print validate_pin("1234")

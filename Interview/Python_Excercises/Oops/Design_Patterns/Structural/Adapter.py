@@ -2,7 +2,7 @@
 If interface is not compatible between a client and a server, adapter provides a
 alternative conversion by providing a alternative interface
 so note that here our specific methods have speak method where as
- clint just calls the speak method in general
+ clint just calls the speak method in generaln
  '''
 
 class Korean(object):
