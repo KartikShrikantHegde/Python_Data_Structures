@@ -2,8 +2,9 @@
 
 ''' Unlike the singleton and factory - which uses polymorphism a lot, builder doesnt use that'''
 
+
 class Director(object):
-    def __init__(self,builder):
+    def __init__(self, builder):
         self._builder = builder
 
     def construct_car(self):
@@ -15,8 +16,8 @@ class Director(object):
     def get_car(self):
         return self._builder.car
 
-class Builder(object):
 
+class Builder(object):
     ''' Abstract builder'''
 
     def __init__(self):
@@ -25,8 +26,8 @@ class Builder(object):
     def create_new_car(self):
         self.car = Car()
 
-class SkyLarkBuilder(Builder):
 
+class SkyLarkBuilder(Builder):
     def add_model(self):
         self.car.model = "Skylark"
 
@@ -46,7 +47,8 @@ class Car(object):
         self.engine = None
 
     def __str__(self):
-        return '{} | {} | {}'.format(self.model,self.tires,self.engine)
+        return '{} | {} | {}'.format(self.model, self.tires, self.engine)
+
 
 builder = SkyLarkBuilder()
 director = Director(builder)
