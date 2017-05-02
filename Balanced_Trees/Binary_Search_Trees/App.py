@@ -5,11 +5,12 @@ from Node import Node
 
 bst = BinarySearchTree()
 
-bst.insert(10)
-bst.insert(8)
-bst.insert(3)
-bst.insert(345)
-bst.insert(678)
+bst.insert('c')
+bst.insert('e')
+bst.insert('r')
+bst.insert('n')
+bst.insert('e')
+bst.insert('r')
 
 bst.traverseInOrder()
 
