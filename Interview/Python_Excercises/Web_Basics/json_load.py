@@ -3,7 +3,9 @@
 import urllib.request
 import json
 
-with urllib.request.urlopen("https://www.google.com") as f:
+from flask import request
+
+with request.urlopen("https://www.google.com") as f:
     response = f.read
 
 obj = json.load(response)
