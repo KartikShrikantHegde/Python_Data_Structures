@@ -9,4 +9,4 @@ def substr(s):
         used_char[char] = i
     return maxlen
 
-print substr('dvdf')
+print substr('abba')

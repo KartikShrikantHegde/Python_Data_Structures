@@ -8,7 +8,7 @@ class Solution(object):
         :rtype: int
         """
 
-        return min([s.find(c) for c, v in Counter(s).iteritems() if v == 1] or [-1])
+        return [s.find(c) for c, v in Counter(s).iteritems() if v == 1] or [-1]
 
         # import collections
         #
