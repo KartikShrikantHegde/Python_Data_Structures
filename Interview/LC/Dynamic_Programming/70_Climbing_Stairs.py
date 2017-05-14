@@ -8,4 +8,4 @@ def climbStairs( n):
         a, b = b, a + b
     return a
 
-print climbStairs(n=4)
+print climbStairs(n=2)

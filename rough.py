@@ -76,9 +76,63 @@
 #
 # my_arr[:] = smaller[0:] + pivot + larget[0:]
 # print my_arr
+#
+# my_arr = [3,1,4,1,3,5,4]
+# from collections import Counter
+# print type(Counter(my_arr))
 
-my_arr = [3,1,4,1,3,5,4]
-from collections import Counter
-print type(Counter(my_arr))
 
 
+
+# class Sample(object):
+#     def __init__(self,x,y):
+#         self.x = x
+#         self.y = y
+#
+#
+# sam = Sample(10,20)
+# sam.x = 25
+# sam.y = 50
+#
+# new_obj = sam
+# sam.x = 100
+# sam.y = 200
+#
+# new_obj.x = 500
+# new_obj.y = 1000
+#
+# print new_obj is sam
+# print new_obj == sam
+# print sam,new_obj
+#
+# print new_obj.x, new_obj.y
+# print sam.x, sam.y
+
+#
+# l = [5,2,3,[11,20,30]]
+#
+# l1 = list(l)
+#
+# print l , l1
+#
+# l[0] = 7
+# l1[0] = 9
+#
+# l1[3][0] = 50
+#
+# print l , l1
+
+# s = "abc"
+#
+# x = list(s)
+#
+# print s,x
+
+import copy
+
+a='deepak'
+b=1,2,3,4
+c=[1,2,3,4]
+d={1:10,2:20,3:30}
+
+print a,b,c,d

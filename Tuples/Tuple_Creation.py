@@ -10,4 +10,4 @@ print my_tuple
 
 a = 'Fedora', 'Debian', 'Kubuntu', 'Pardus'
 
-print a
+print type(a)

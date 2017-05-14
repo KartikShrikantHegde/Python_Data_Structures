@@ -15,6 +15,47 @@
 #
 #
 
+The difference between shallow and deep copying is only relevant for
+compound objects, which are objects containing other objects, like lists or class instances.
+
+For immutable objects, there is no need for copying because the data will never change, so Python uses the same data; ids are always the same. For mutable objects, since they can potentially change, [shallow] copy creates a new object.
+
+Deep copy is related to nested structures. If you have list of lists, then deepcopy copies the nested lists also, so it is a recursive copy. With just copy, you have a new outer list, but inner lists are references.
+
+Assignment does not copy. It simply sets the reference to the old data. So you need copy to create a new list with the same contents.
+
+
+
+import copy
+
+a = [1, 2, 3]
+b = [4, 5, 6]
+c = [a, b]
+
+Using normal assignment operatings to copy:
+
+d = c
+
+print id(c) == id(d)          # True - d is the same object as c
+print id(c[0]) == id(d[0])    # True - d[0] is the same object as c[0]
+Using a shallow copy:
+
+d = copy.copy(c)
+
+print id(c) == id(d)          # False - d is now a new object
+print id(c[0]) == id(d[0])    # True - d[0] is the same object as c[0]
+Using a deep copy:
+
+d = copy.deepcopy(c)
+
+print id(c) == id(d)          # False - d is now a new object
+print id(c[0]) == id(d[0])    # False - d[0] is now a new object
+
+
+--------------------------------------------------------------------------
+
+
+
 # Shallow copying
 
 import copy
@@ -25,7 +66,7 @@ b = a.copy()
 
 # Both have the same values
 
-print a,b
+print id(a),id(b)
 
 a['x'].append(2)
 
