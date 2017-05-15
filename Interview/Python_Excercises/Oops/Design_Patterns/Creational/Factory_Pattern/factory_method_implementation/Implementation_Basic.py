@@ -1,5 +1,8 @@
-''' Factory pattern is an object for the creation of other objects
-In this example get_pet method is the factory method tha produces objects of diff class'''
+# Factory Method, we execute a single function, passing a parameter that provides
+# information about what we want. We are not required to know any details about how the object is
+# implemented and where it is coming from.
+
+
 
 
 class Dog(object):
@@ -22,7 +25,7 @@ def get_pet(pet):
 
     """ Factory method """
 
-    pets = dict(dog=Dog("Hope"), cat=Cat("Peace"))
+    pets = dict(dog=Dog("Danny"), cat=Cat("Rossy"))
 
     return pets[pet]
 
