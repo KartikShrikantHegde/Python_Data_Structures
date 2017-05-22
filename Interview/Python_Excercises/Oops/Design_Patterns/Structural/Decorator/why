@@ -1,0 +1,37 @@
+Whenever we want to add extra functionality to an object, we have a number of different options. We can:
+
+Add the functionality directly to the class the object belongs to, if it makes sense (for example, add a new method)
+
+Use composition
+
+Use inheritance
+Composition should generally be preferred over inheritance, because inheritance makes code reuse harder, it's static, and applies to an entire class and all instances of it [GOF95, page 31], [j.mp/decopat].
+
+Design patterns offer us a fourth option that supports extending the functionality of an object dynamically (in runtime): Decorators. A Decorator pattern can add responsibilities to an object dynamically, and in a transparent manner (without affecting other objects) [GOF95, page 196].
+
+In many programming languages, the Decorator pattern is implemented using sub-classing (inheritance) [GOF95, page 198]. In Python, we can (and should) use the built-in decorator feature. A Python decorator is a specific change to the syntax of Python that is used for extending the behavior of a class, method, or function without using inheritance. In terms of implementation, a Python decorator is a callable (function, method, class) that accepts a function object fin as input, and returns another function object fout [j.mp/conqdec]. This means that any callable that has these properties can be treated as a decorator.
+
+Use cases
+
+The Decorator pattern shines when used for implementing cross-cutting concerns [Lott14, page 223], [j.mp/wikicrosscut]. Examples of cross-cutting concerns are:
+
+Data validation
+
+Transaction processing (A transaction in this case is similar to a database transaction, in the sense that either all steps should be completed successfully, or the transaction should fail.)
+
+Caching
+
+Logging
+
+Monitoring
+
+Debugging
+
+Business rules
+
+Compression
+
+Encryption
+In general, all parts of an application that are generic and can be applied to many other parts of it, are considered cross-cutting concerns.
+
+Another popular example of using the Decorator pattern is Graphical User Interface (GUI) toolkits. In a GUI toolkit, we want to be able to add features such as borders, shadows, colors, and scrolling to individual components/widgets [GOF95, page 196].

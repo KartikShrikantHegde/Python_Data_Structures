@@ -1,4 +1,5 @@
 ''' Helps to solve the problem where we need to create many identical objects individually.
+clone is used for the users to provide with the cloned objetcs
 '''
 
 import copy
@@ -25,6 +26,7 @@ class Prototype(object):
         ''' if you want to update the object attribute you are cloning '''
 
         obj.__dict__.update(attr)
+
         return obj
 
 

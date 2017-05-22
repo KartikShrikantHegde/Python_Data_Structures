@@ -13,7 +13,7 @@ from functools import wraps
 def make_blink(function):
     # ''' defines the decorator'''
     #
-    # ''' pass in the function to decorate so that it becomes transparent'''
+    # ''' pass in the function to decorate so that it becomes transparent. '''
 
     @wraps(function)
     # ''' Define the inner function '''
