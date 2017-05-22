@@ -27,18 +27,19 @@ class Builder(object):
         self.car = Car()
 
 
-class SkyLarkBuilder(Builder):
+class AudiBuilder(Builder):
     def add_model(self):
-        self.car.model = "Skylark"
+        self.car.model = "Audi"
 
     def add_tires(self):
-        self.car.tires = "Regular tires"
+        self.car.tires = "MRF tires"
 
     def add_engine(self):
         self.car.engine = "Turbo Engine"
 
 
 class Car(object):
+
     ''' Product '''
 
     def __init__(self):
@@ -50,7 +51,7 @@ class Car(object):
         return '{} | {} | {}'.format(self.model, self.tires, self.engine)
 
 
-builder = SkyLarkBuilder()
+builder = AudiBuilder()
 director = Director(builder)
 
 director.construct_car()

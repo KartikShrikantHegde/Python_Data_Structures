@@ -1,0 +1,9 @@
+
+A practical example can help us understand what the purpose of the Builder pattern is. Suppose that we want to create an HTML page generator, the basic structure (construction part) of an HTML page is always the same: it begins with <html> and finishes with </html>; inside the HTML section are the <head> and </head> elements, inside the head section are the <title> and </title> elements, and so forth. But the representation of the page can differ. Each page has its own title, its own headings, and different <body> contents. Moreover, the page is usually built in steps: one function adds the title, another adds the main heading, another the footer, and so on. Only after the whole structure of a page is complete can it be shown to the client using a final render function. We can take it even further and extend the HTML generator so that it can generate totally different HTML pages. One page might contain tables, another page might contain image galleries, yet another page contains the contact form, and so on.
+
+The HTML page generation problem can be solved using the Builder pattern. In this pattern, there are two main participants: the builder and the director. The builder is responsible for creating the various parts of the complex object. In the HTML example, these parts are the title, heading, body, and the footer of the page. The director controls the building process using a builder instance. The HTML example means for calling the builder's functions for setting the title, the heading, and so on. Using a different builder instance allows us to create a different HTML page without touching any code of the director
+
+Burger preparation in restuarant.
+
+
+

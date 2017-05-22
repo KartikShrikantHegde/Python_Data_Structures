@@ -22,7 +22,6 @@ class Cat(object):
 
 
 def get_pet(pet):
-
     """ Factory method """
 
     pets = dict(dog=Dog("Danny"), cat=Cat("Rossy"))

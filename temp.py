@@ -146,18 +146,100 @@
 # print set([4, 4, 4])
 
 
-def validate_pin(pin):
-    # return true or false
-    my_no = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-    if len(pin) == 4 or len(pin) == 6:
-        for ch in pin:
-            if ch in my_no:
-                continue
+# def validate_pin(pin):
+#     # return true or false
+#     my_no = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+#     if len(pin) == 4 or len(pin) == 6:
+#         for ch in pin:
+#             if ch in my_no:
+#                 continue
+#             else:
+#                 return False
+#     else:
+#         return False
+#
+#     return True
+#
+# print validate_pin("1234")
+
+# def solution(E,L):
+#     entry = E.split(":")
+#     exit = L.split(":")
+#     entry = float('.'.join(entry))
+#     exit = float('.'.join(exit))
+#     diff = exit - entry
+#     diff = str(diff)
+#     diff = diff.split(".")
+#     first_part = int(diff[0])
+#     second_part = int(diff[1])
+#     total = 2
+#     if first_part < 1:
+#         total += 3
+#     elif first_part >= 1 and first_part < 2 and second_part == 0:
+#         total += 3
+#     elif first_part >= 1 and first_part < 2 and second_part > 0:
+#         total += 7
+#     elif first_part >= 2 and second_part == 0:
+#         total += 3 + ((first_part - 1)* 4)
+#     else:
+#         total += 3 + ((first_part - 1)* 4) + 4
+#
+#     return total
+#
+#
+# E = "10:00"
+# L = "15:21"
+# print solution(E,L)
+
+def solution(A, B, M, X, Y):
+    # write your code in Python 2.7
+
+    if not A:
+        return 0
+    current_sum = 0
+    a = []
+    counter_a = 0
+    counter_m = 0
+    ele = 0
+
+    while counter_a < len(A):
+        max_people = 0
+        for i in range(len(A)):
+            if counter_a >= len(A):
+                break
+
+            current_sum += A[counter_a]
+            if current_sum < 200 and max_people < X:
+                counter_a += 1
+                max_people += 1
             else:
-                return False
-    else:
-        return False
+                current_sum = 0
+                break
 
-    return True
+        for counter_b in range(counter_a):
+            if counter_m >= len(B):
+                break
+            if B[counter_m] not in a:
+                ele += 1
+                a.append(B[counter_m])
+            counter_m += 1
 
-print validate_pin("1234")
+        a = []
+        ele += 1
+
+    return ele
+
+
+# A = [60,80,40]
+# B = [2,3,5]
+# M = 5
+# X = 2
+# Y = 200
+
+A = [40,40,100,80,20]
+B = [3,3,2,2,3]
+M = 3
+X = 5
+Y = 200
+
+print solution(A,B,M,X,Y)

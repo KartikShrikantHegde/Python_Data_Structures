@@ -1,0 +1,5 @@
+We use the Builder pattern when we know that an object must be created in multiple steps, and different representations of the same construction are required.
+
+The main difference is that a Factory pattern creates an object in a single step, whereas a Builder pattern creates an object in multiple steps, and almost always through the use of a director.
+
+Thus, complex objects involving multiple steps are built using builder and director provides the exact representation.
