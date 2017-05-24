@@ -21,7 +21,7 @@ class Producer(object):
 
 class Proxy(object):
     def __init__(self):
-        self.occupied = 'No'
+        self.occupied = 'Yes'
         self.producer = None
 
     def produce(self):
