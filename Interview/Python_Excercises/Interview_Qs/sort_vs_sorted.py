@@ -1,4 +1,4 @@
-# sorted doest modify the oroginal list
+# sorted doest modify the original list
 #
 # sort is a inplace sorting method so you cant assign it to anything as it returns None
 #

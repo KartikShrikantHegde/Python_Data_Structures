@@ -133,11 +133,40 @@
 # print my_list
 # print dict(my_list)
 
-a = [{"x": 200, "y": 1000},
-     {"x": 201, "y": 900}
+# a = [{"x": 200, "y": 1000},
+#      {"x": 201, "y": 900}
+#      ]
 
-     ]
+#
+# colour = {'blue': 5, 'purple': 6, 'green': 2, 'red': 2}
+# min_val = min(colour.itervalues())
+#
+# print min_val
+# # [k for k, v in colour.iteritems() if v == min_val]
+# # ['green', 'red']
 
+def findRestaurant(list1, list2):
+     """
+     :type list1: List[str]
+     :type list2: List[str]
+     :rtype: List[str]
+     """
+     d = {}
+
+     for i in xrange(len(list1)):
+          d[list1[i]] = i
+
+     final_dict = {}
+     for j in xrange(len(list2)):
+          if list2[j] in d.keys():
+               final_dict[list2[j]] = j + d[list2[j]]
+
+     min_val = min(final_dict.itervalues())
+     print min_val
+
+     return [key for key, value in final_dict.iteritems() if value == min_val]
+
+print findRestaurant(list1=["Shogun","Tapioca Express","Burger King","KFC"],list2=["KFC","Shogun","Burger King"])
 
 
 
